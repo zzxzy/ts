@@ -1,0 +1,58 @@
+.divFoot .liMine a .icon-wode {
+  color: #3492b7;
+}
+.divFoot .liMine a p {
+  color: #3492b7;
+}
+body {
+  background-color: #F7F7F7;
+}
+.tb1 {
+  width: 100%;
+  height: 41.86666667vw;
+  background-color: #FA2C19;
+}
+.tb1 .mine {
+  height: 20.53333333vw;
+  padding: 3.46666667vw;
+  display: flex;
+  justify-content: space-between;
+}
+.tb1 .mine .tx1 {
+  height: 13.6vw;
+  display: flex;
+  position: relative;
+}
+.tb1 .mine .tx1 .tp1 {
+  width: 14.93333333vw;
+  height: 12.8vw;
+  padding: 0 2.13333333vw 0 0;
+}
+.tb1 .mine .tx1 .xtx1 {
+  width: 29.86666667vw;
+  height: 5.6vw;
+  color: #fff;
+  font-size: 5.06666667vw;
+}
+.tb1 .mine .tx1 .xtx2 {
+  position: absolute;
+  width: 29.86666667vw;
+  height: 5.6vw;
+  background-color: #FFFFFF80;
+  border-radius: 2.66666667vw;
+  margin-left: 13.33333333vw;
+  margin-top: 6.66666667vw;
+}
+.tb1 .mine .tx1 .xtx2 .tp2 {
+  width: 5.86666667vw;
+  height: 4.8vw;
+}
+.tb1 .mine .tx1 .xtx2 p {
+  display: inline-block;
+  font-size: 3.2vw;
+  color: #fff;
+}
+.tb1 .mine .tx3 {
+  font-size: 3.73333333vw;
+  color: #fff;
+}

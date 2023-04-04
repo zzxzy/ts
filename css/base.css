@@ -1,0 +1,59 @@
+/* 清除内外边距、让盒子自动内减 */
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+
+/* 清除ul/ol前点 */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* 清除a标签样式 */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+
+/* 真正清除浮动的标签 */
+
+.clearfix::after {
+    /* content: '';
+            display: table; */
+    clear: both;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

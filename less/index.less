@@ -1,0 +1,176 @@
+// 推荐歌单
+.divRec {
+  width: 100%;
+  height: 12vw;
+  background-color: rgb(234, 234, 234);
+  margin-bottom: 2.5vw;
+  p {
+    padding-left: 3vw;
+    line-height: 12vw;
+  }
+}
+
+// 推荐歌单内容
+.ulRecSong {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  li {
+    width: 33%;
+    height: 40vw;
+    margin-bottom: 2vw;
+    padding: 0 1vw;
+    img {
+      width: 31vw;
+      height: 31vw;
+    }
+    span {
+      font-size: 1vw;
+      line-height: 4vw;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis; /* 文本溢出时显示省略号来代表被修剪的文本 */
+      display: -webkit-box; /* 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 */
+      -webkit-box-orient: vertical; /* 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 */
+      -webkit-line-clamp: 2; /* 文本需要显示多少行 */
+    }
+  }
+}
+
+//最新音乐
+.divNew {
+  width: 100%;
+  height: 12vw;
+  background-color: rgb(234, 234, 234);
+  margin-bottom: 2.5vw;
+  p {
+    padding-left: 3vw;
+    line-height: 12vw;
+  }
+}
+//最新音乐内容
+.ulNewSong {
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vw;
+    border-bottom: 1px solid gray;
+    padding: 0 5vw;
+    .pNewArt {
+      color: rgb(159, 157, 157);
+      font-size: 3.5vw;
+    }
+    .spanStart {
+      position: absolute;
+      font-size: 8vw;
+      right: 5vw;
+      top: 6.5vw;
+    }
+  }
+}
+
+//底部颜色
+.divFoot {
+  .liIndex {
+    a {
+      .icon-shouye {
+        color: rgb(52, 146, 183);
+      }
+      p {
+        color: rgb(52, 146, 183);
+      }
+    }
+  }
+}
+
+//播放歌曲页面
+.divPlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(34, 34, 34);
+  z-index: 999;
+  display: none;
+  //退出图标
+  .icon-fanhuijiantou {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    margin: 3vw 0 0 3vw;
+  }
+  // 外围圆环
+  .bigRound {
+    position: relative;
+    display: block;
+    width: 66vw;
+    height: 66vw;
+    border-radius: 50%;
+    border: 9px solid rgb(26, 24, 24);
+    margin: 8vw 17vw 0;
+    z-index: 3;
+    // 唱片圆环
+    .middleRound {
+      position: absolute;
+      width: 61vw;
+      height: 61vw;
+      z-index: 2;
+      top: 0.5px;
+      left: 0.5px;
+      border-radius: 50%;
+      background-color: black;
+      //白圆环
+      .smallRound {
+        position: relative;
+        display: block;
+        width: 40vw;
+        height: 40vw;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin: 11vw 11vw;
+        overflow: hidden;
+        background-color: #fff;
+        //歌曲图片
+        .songPic {
+          margin: 5vw;
+          width: 30vw;
+          height: 30vw;
+          background-image: url(../img/WOXkzn97JI7c_U_7a0gMVg==_109951168193569078.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+        //播放按钮
+        .icon-boshiweb_bofang {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 18vw;
+          color: rgb(199, 197, 197);
+        }
+      }
+    }
+  }
+  // 歌曲名字-演唱者
+  .songName {
+    color: rgba(255, 255, 255, 0.854);
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 5vw;
+    font-weight: 500;
+  }
+  // 歌曲内容
+  .songContent {
+    color: rgba(255, 255, 255, 0.854);
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 12vw;
+    font-weight: 500;
+  }
+}

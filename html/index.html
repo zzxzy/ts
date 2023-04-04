@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../lib/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <style>
+        audio {
+            margin-left: 136px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部首页 -->
+    <div class="divHead clearfix">
+        <p>首页</p>
+    </div>
+
+    <!-- 推荐标题 -->
+    <div class="divRec">
+        <p>推荐歌单</p>
+    </div>
+
+    <!-- 推荐歌单内容 -->
+    <ul class="ulRecSong"></ul>
+
+    <!-- 最新音乐 -->
+    <div class="divNew">
+        <p>最新音乐</p>
+    </div>
+
+    <!-- 最新音乐内容 -->
+    <ul class="ulNewSong"></ul>
+
+    <!-- 底部按钮栏 -->
+    <div class="divFoot">
+        <ul>
+            <li class="liIndex">
+                <a href="./index.html">
+                    <span class="iconfont icon-shouye"></span>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="liSearch">
+                <a href="./search.html">
+                    <span class="iconfont icon-sousuo"></span>
+                    <p>搜索</p>
+                </a>
+            </li>
+            <li class="liPlay">
+                <a href="javascript:;">
+                    <span class="iconfont icon-boshiweb_bofang"></span>
+                    <p>播放</p>
+                </a>
+            </li>
+            <li class="liMine">
+                <a href="./mine.html">
+                    <span class="iconfont icon-wode"></span>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 歌曲播放页面 -->
+    <div class="divPlay">
+
+        <!-- 退出图标 -->
+        <a class="iconfont icon-fanhuijiantou aEnd" href="javascript:;"></a>
+
+        <!-- 歌曲唱片样式 -->
+        <!-- 外围圆环 -->
+        <div class="bigRound">
+            <!-- 唱片圆环 -->
+            <div class="middleRound">
+                <!-- 白圆环 -->
+                <div class="smallRound">
+                    <!-- 歌曲图片 -->
+                    <div class="songPic"></div>
+                    <!-- 播放按钮 -->
+                    <span id="mis" class="iconfont icon-boshiweb_bofang">
+                        <audio id="ms" controls src=""></audio>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 歌曲名字-演唱者 -->
+        <p class="songName">歌曲名字-演唱者</p>
+        <!-- 歌曲内容 -->
+        <p class="songContent">歌曲内容...</p>
+    </div>
+
+    <!-- JS引入 -->
+    <script src="../js/jQuery.min.js "></script>
+    <script src="../js/index.js "></script>
+</body>
+
+</html>
